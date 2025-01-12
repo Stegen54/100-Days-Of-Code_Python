@@ -1,0 +1,7 @@
+Sword
+Shield
+Potion
+Bow
+Arrow
+Helmet
+Armor
