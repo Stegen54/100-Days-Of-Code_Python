@@ -8,7 +8,7 @@ reflections = {
         "name": "Day 78",
         "title": "Building a Reflection Journal",
         "text": "Today I learned how to create dynamic routes in Flask and use them to build a reflection journal.",
-        "link": "https://replit.com/@username/day78-project",
+        "link": "https://github.com/Stegen54/100-Days-Of-Code_Python/tree/main/Day78100Days-main",
         "image": "Zoro.jpg"
     }
     # I will add more days as needed
