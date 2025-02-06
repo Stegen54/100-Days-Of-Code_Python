@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Coding Reflections</title>
+    <link href="/static/css/portfolio.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="landing">
+        <h1>Welcome to My Coding Journey</h1>
+        <p>This is a collection of my reflections during my 100 Days of Code challenge.</p>
+        <div class="instructions">
+            <h2>How to Navigate:</h2>
+            <p>Add a day number (78-100) to the URL to view specific reflections.</p>
+            <p>For example: <code>/78</code> will show you Day 78's reflection.</p>
+        </div>
+        <div class="available-days">
+            <h2>Available Reflections:</h2>
+            <ul>
+                {% for day in days %}
+                    <li><a href="/{{day}}">Day {{day}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
