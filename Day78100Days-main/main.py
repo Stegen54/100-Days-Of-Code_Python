@@ -12,6 +12,14 @@ reflections = {
         "image": "Zoro.jpg"
     }
     # I will add more days as needed
+    ,
+        "79": {
+            "name": "Day 79",
+            "title": "Form Data Collection",
+            "text": "Today I added more content to my reflection journal and improved the portfolio functionality.",
+            "link": "https://github.com/Stegen54/100-Days-Of-Code_Python/tree/main/Day79100Days-main",
+            "image": "Zoro.jpg"
+        }
 }
 
 @app.route('/')
