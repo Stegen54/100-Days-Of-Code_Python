@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Robot Verification</title>
+  <link href="/static/css/portfolio.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>I'm not a robot verification</h1>
+  
+  <form method="POST" action="/verify">
+    <div class="question">
+      <label>Are you made of metal?</label><br>
+      <input type="radio" name="metal" value="yes" title="Yes">Yes
+      <input type="radio" name="metal" value="no" title="No">No
+    </div>
+
+    <div class="question">
+      <label>What do you dream of becoming?</label><br>
+      <input type="text" name="dream" title="Dream" placeholder="Enter your dream" required>
+    </div>
+
+    <div class="question">
+      <label>Who is your manufacturer?</label><br>
+      <select name="manufacturer" title="Manufacturer">
+        <option value="human">I'm human</option>
+        <option value="sirius">Sirius Cybernetics Corporation</option>
+        <option value="cyberdyne">Cyberdyne Systems</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <input type="submit" value="Verify">
+  </form>
+
+</body>
+</html>
