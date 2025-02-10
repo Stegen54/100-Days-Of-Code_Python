@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if data != {} %}{{data['title']}}{% else %}Page Not Found{% endif %}</title>
+</head>
+<body>
+    {% if data != {} %}
+        <h1>{{data['greeting']}}</h1>
+        <p>{{data['message']}}</p>
+        <p>
+            <a href="/">English</a> | 
+            <a href="/spanish">Español</a>
+        </p>
+    {% else %}
+        <h1>Invalid Language Selected</h1>
+        <p>Please choose a valid language:</p>
+        <p>
+            <a href="/">English</a> | 
+            <a href="/spanish">Español</a>
+        </p>
+    {% endif %}
+</body>
+</html>
