@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Room</title>
+  <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="chat-container">
+    <h1>Chat Room</h1>
+    <div class="messages">
+      {% for message in messages %}
+        <div class="message">
+          <strong>{{ message.username }}</strong>: {{ message.message }}
+          {% if is_admin %}
+            <a href="/delete/{{ message.timestamp }}" class="delete-btn">Delete</a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    <form method="post" action="/post">
+      <input type="text" name="message" placeholder="Type your message" required>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+.login-container, .chat-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.messages {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.delete-btn {
+  color: red;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+input, button {
+  margin: 5px;
+  padding: 5px;
+}
